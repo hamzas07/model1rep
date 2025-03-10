@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Results</title>
+</head>
+<body>
+    <h2>Prediction Results</h2>
+    <table border="1">
+        <tr>
+            <th>Disease</th>
+            <th>Prediction</th>
+        </tr>
+        {% for disease, result in results.items() %}
+        <tr>
+            <td>{{ disease }}</td>
+            <td>{{ result }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="/">Upload Another Report</a>
+</body>
+</html>
